@@ -1,0 +1,74 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+h2 {
+  color: blue;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+h4 {
+  border: 5px solid #ddd;
+}
+
+h4:hover {
+  border-color: #999;
+}
+
+h5 {
+  color: red;
+}
+
+h6 {
+  color: green;
+}
+
+.p1 {
+  padding-left: 10px;
+}
+
+.p2 {
+  padding-left: 20px;
+}
+
+.p3 {
+  padding-left: 30px;
+}
+
+.p4 {
+  padding-left: 40px;
+}
+/*# sourceMappingURL=mystyle.css.map */

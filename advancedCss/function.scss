@@ -1,0 +1,26 @@
+//  string function
+h1{  
+    color: if($str-index("hello","h") == 1 , green , red);  
+}
+// numeric function
+h2{  
+    color: if( round(7.25) == 7, red , green);  
+}
+// list function
+h3{  
+    color: if( length(1 2 3) == 3 , green , red);  
+}
+// map function
+h4{  
+    color: if( map-get(("red": #ff0000, "green": #00ff00), "green") == #00ff00 , red , green);  
+}
+// introspection function
+h5{  
+    color: if( type-of(1 2 3) == "list" , green , red);  
+}
+// arithmetic and comparison operations
+h6{  
+    color: invert(#ad4038);  
+}
+
+ 

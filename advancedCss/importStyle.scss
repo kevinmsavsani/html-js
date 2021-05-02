@@ -1,0 +1,9 @@
+@import "mystyle";
+
+// partial imports
+@import "colors";
+
+body {
+  font-size: 24px;
+  color: $myBlue;
+}

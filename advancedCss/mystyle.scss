@@ -1,0 +1,77 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+
+// variable scope
+$myColor: red;
+
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+
+h3 {
+  $myColor: blue !global;
+  color: $myColor;
+}
+
+h2 {
+  color: $myColor;
+}
+
+// nested rules
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+@mixin bordered($width) {
+  border: $width solid #ddd;
+
+  &:hover {
+      border-color: #999;
+  }
+}
+
+h4 {
+  @include bordered(5px);
+}
+
+h5{  
+  color: if( 1 + 1 == 3 , green , red);  
+}
+
+h6{  
+  color: if( 1 + 1 == 3 , red , green);  
+}
+
+@for $i from 1 through 4 {  
+  .p#{$i} { padding-left : $i * 10px; }  
+}   
